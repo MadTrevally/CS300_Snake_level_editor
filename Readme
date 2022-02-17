@@ -1,0 +1,12 @@
+Level editor
+Usage:
+./make_level <width> <height>
+
+Opens a window in curses. 
+Use arrow keys to move around the board.
+Press special keys to set cell type:
+E = Empty 
+W = Wall
+S = Snake
+
+Make sure your level has exactly one snake!
