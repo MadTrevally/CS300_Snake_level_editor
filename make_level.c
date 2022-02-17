@@ -37,7 +37,7 @@ input_key_t r_get_input() {
     /* DO NOT MODIFY THIS FUNCTION */
 }
 
-board_t* initialize_board(board_t* board, int width, int height, char* rep) {
+board_t* initialize_board(board_t* board, int width, int height) {
     board->height = height;
     board->width = width;
     board->cursor = 0;
@@ -46,7 +46,7 @@ board_t* initialize_board(board_t* board, int width, int height, char* rep) {
         if ((i < width) || (i % width == 0) || ((i + 1) % width == 0) ||
             (i > (height - 1) * width)) { board->cells[i] = 2; }
     board->ready = 0;
-
+    }
     return board;
 }
 
